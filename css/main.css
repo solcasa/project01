@@ -10,8 +10,8 @@ ul {
 
 .header {
     position: fixed;
-    top: 50px;
-    left: 50px;
+    top: 10px;
+    left: 10px;
     z-index: 999;
 }
 
@@ -46,13 +46,6 @@ nav li.on a::after {
     width: 100px;
 }
 
-.section .inner {
-    display: flex;
-    gap: 30px;
-    width: 1200px;
-    margin: 0 auto;
-}
-
 .section figure {
     position: relative;
     width: 300px;
@@ -60,7 +53,7 @@ nav li.on a::after {
     margin: 0 auto 30px auto;
     border-radius: 50%;
     overflow: hidden;
-    border: 20px solid rgba(0, 0, 0, 0.2);
+    border: 10px solid rgba(0, 0, 0, 0.2);
     transform: translate(0, 100px);
     opacity: 0;
     transition: 0.5s 1s;
@@ -69,8 +62,8 @@ nav li.on a::after {
 .section figure::after {
     content: "";
     position: absolute;
-    right: 30px;
-    top: 20px;
+    right: 80px;
+    top: 40px;
     width: 40px;
     height: 20px;
     background: green;
@@ -116,4 +109,16 @@ nav li.on a::after {
     text-align: center;
     transform: translate(0, 0);
     opacity: 1;
+}
+
+.footer {
+    position: relative;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+.footer li {
+    list-style-type: none;
 }
